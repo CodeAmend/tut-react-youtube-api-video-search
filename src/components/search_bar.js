@@ -1,7 +1,11 @@
 import React from 'react';
 
-const SearchBar = () => {
-  return <input />;
-};
+//  We need a class-based componet. More intellegent with values and methods
+class SearchBar extends React.Component {
+  // ever class based React compoent must have render component
+  render() {
+    return <input />;
+  }
+}
 
 export default SearchBar;
