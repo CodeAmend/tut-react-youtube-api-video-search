@@ -6,11 +6,8 @@ import React, { Component } from 'react';
 class SearchBar extends Component {
   // ever class based React compoent must have render component
   render() {
-    return <input onChange={ this.onInputChange } />;
-  }
-
-  onInputChange(event) {
-    console.log(event.target.value);
+    // ES6 style simple function call.
+    return <input onChange={ event => console.log(event.target.value) } />;
   }
 
 }
