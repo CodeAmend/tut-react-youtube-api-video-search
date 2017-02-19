@@ -14,3 +14,7 @@ VIDEO_DETAIL
 -we only care about the: title, description and url
 -all properties of props from App component.
 - No state needed! So just a functional component.
+
+- this issue with: videoId from undefined
+-- React likes to load components quickly so we need a check
+-- if(!video) { return <div>Loading...</div> }
