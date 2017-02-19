@@ -7,7 +7,9 @@ class SearchBar extends Component {
   // ever class based React compoent must have render component
   render() {
     // ES6 style simple function call.
-    return <input onChange={ event => console.log(event.target.value) } />;
+    return (
+      <input onChange={ event => console.log(event.target.value); } />;
+    )
   }
 
 }
