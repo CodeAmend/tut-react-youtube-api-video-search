@@ -8,8 +8,8 @@ const VideoList = (props) => {
         // simply passing this function from App, VideoList to VideoItemsList
         onVideoSelect={props.onVideoSelect}
         key={video.etag}
-        video={video}
-      />)
+        video={video} />
+      );
   });
 
   return (
