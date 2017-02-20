@@ -1,5 +1,6 @@
 import React from 'react';
 
+// onVideoSelect is a function from App to setState
 const VideoListItem = ({video, onVideoSelect}) => {
 
   const imageUrl = video.snippet.thumbnails.default.url;
