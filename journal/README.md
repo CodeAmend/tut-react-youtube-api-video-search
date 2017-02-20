@@ -16,10 +16,10 @@ Starting out:
 * video_list_item
 * and index.js to hold the parent 'App' React component.
 
-#### search_bar
+#### SearchBar
 This will need a search term, so that is a good reason to make this a class with a state.
 
-#### video_detail
+#### VideoDetail
 -its a youtube embed
 -we only care about the: title, description and url
 -all properties of props from App component.
@@ -29,10 +29,18 @@ This will need a search term, so that is a good reason to make this a class with
 -- React likes to load components quickly so we need a check
 -- if(!video) { return <div>Loading...</div> }
 
-#### video_list
+#### VideoList
 
-#### video_list_item
+#### VideoListItem
 
-#### index
--We need a new state selectedVideo:
--- this allows for links to be clicked and the app to be in communication with the child.
+
+### App / index
+
+##### states
+* videos
+* selectedVideo
+  + links clicked from a child component can communicate with App.
+  + pass a callback from App to VideoList
+  + and from VideoList to VideoListItem
+
+The selectedVideo is set to null and VideoDetail is send a reference. Problem is, at the time of render, 
