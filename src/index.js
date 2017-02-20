@@ -35,7 +35,11 @@ class App extends Component {
         <SearchBar />
         // selectedVideo has an initial state null.
         <VideoDetail video={this.state.selectedVideo}/>
-        <VideoList videos={this.state.videos} />
+        <VideoList
+          // child components have access to set Apps selectedVideo state.
+          onVideoSelect={(selectedVideo) => { this.setState({ selectedVideo })}}
+          videos={this.state.videos}
+        />
       </div>)
   }
 }

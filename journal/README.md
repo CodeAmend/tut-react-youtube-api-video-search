@@ -1,4 +1,6 @@
 # Video Search APP - Learning React and Redux
+### I am following Stephen Grider's course on [Udemy](https://www.udemy.com/react-redux/learn/v4/overview) 
+
 <br>
 ![basic sketch](./video browser.png)
 
@@ -43,4 +45,4 @@ This will need a search term, so that is a good reason to make this a class with
   + pass a callback from App to VideoList
   + and from VideoList to VideoListItem
 
-The selectedVideo is set to null and VideoDetail is send a reference. Problem is, at the time of render, 
+The selectedVideo is set to null and VideoDetail is send a reference. Problem is, at the time of render,
