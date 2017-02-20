@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
-        // selectedVideo has an initial state null.
+        {/* selectedVideo has an initial state null. */}
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList
           // child components have access to set Apps selectedVideo state.
