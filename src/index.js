@@ -6,17 +6,25 @@ import VideoDetail from './components/video_detail';
 
 import YTSearch from 'youtube-api-search';
 
-const API_KEY = 'AIzaSyBonG_EHrxqUyl2ChI2V08goBBZL7BxCWw'
+const API_KEY = 'AIzaSyC4xBBgyXJmLMPvgxABg6hRcUzIpARUJhw'
 
 class App extends Component {
 
   constructor(props) {
     super(props)
 
-    this.state = { videos: [] }
+    // selectedVideo set to null, because at this time, YTSearch won't be done.
+    this.state = {
+      videos: [],
+      selectedVideo: null
+    }
 
+    // YTSearch is asychronous, component will render before request is done
     YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
-      this.setState({ videos });
+      this.setState({
+        videos: videos,
+        selectedVideo: videos[0]
+      });
     })
 
   }
@@ -25,7 +33,8 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
-        <VideoDetail video={this.state.videos[0]}/>
+        // selectedVideo has an initial state null.
+        <VideoDetail video={this.state.selectedVideo}/>
         <VideoList videos={this.state.videos} />
       </div>)
   }

@@ -2,6 +2,7 @@ import React from 'react';
 
 const VideoDetail = ({video}) => {
 
+  // selectedVideo/video has an initial state of null until update.
   if(!video) {
     return <div>Loading...</div>
   }
