@@ -1,5 +1,5 @@
 # Video Search APP - Learning React and Redux
-### I am following Stephen Grider's course on [Udemy](https://www.udemy.com/react-redux/learn/v4/overview) 
+### I am following Stephen Grider's course on [Udemy](https://www.udemy.com/react-redux/learn/v4/overview)
 
 <br>
 ![basic sketch](./video browser.png)
@@ -9,6 +9,16 @@ Starting out:
 [Youtube API](https://console.developers.google.com/apis/api/youtube/overview)
 
  Before writing a compoent: I should ask: <br>Do I expect this component to need to maintain any type of state?
+ <br>
+
+The difference between a class-based and functional component?
+* A class is used whenever we want to use 'state'
+  + state is set within the constructor
+  + states are component level.
+  + when ever state changes component and childredn are rerendered
+* Function is for simple properties, nothing changes.
+  + super fast and easy to get going
+* callbacks are a bit confusing. Redux can come to the rescue.
 
 
 ## components:
