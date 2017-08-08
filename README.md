@@ -1,8 +1,8 @@
 
-### [tut-react-redux-youtube-api-video-search-list]
-https://github.com/CodeAmend/tut-react-redux-forms-router-blog
+### [react-redux-youtube-api-video-search-list]
+https://github.com/CodeAmend/tut-react-redux-youtube-api-video-search-list
 
-This shows a list of videos that match your search using Youtubes API.
+This shows a list of videos that match your search using Youtubes API. 
 
 * Shows default video
 * Search box for search term
