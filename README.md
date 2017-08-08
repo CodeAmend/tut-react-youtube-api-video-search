@@ -1,6 +1,6 @@
 
-### [react-redux-youtube-api-video-search-list]
-https://github.com/CodeAmend/tut-react-redux-youtube-api-video-search-list
+### [react-youtube-api-video-search]
+https://github.com/CodeAmend/tut-react-youtube-api-video-search
 
 This shows a list of videos that match your search using Youtubes API. 
 
